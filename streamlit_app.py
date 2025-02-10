@@ -19,7 +19,8 @@ load_dotenv()
 
 
 def main():
-    st.title("Thematic Text Processing with BERTopic")
+    st.set_page_config(page_title="Text Processing with BERTopic")
+    st.title("Text Processing with BERTopic")
 
     # Sidebar settings
     use_openai = st.sidebar.checkbox("Use OpenAI for topic representation")

@@ -73,7 +73,7 @@ class ThematicTextProcessor:
         categorized_chunks = []
 
         for i, chunk in enumerate(original_chunks):
-            topic_id = topics[i] if i < len(topics) else -1  # Handle any mismatch
+            topic_id = topics[i] if i < len(topics) else -1
             if topic_id == -1:
                 topic_name, topic_representation, topic_count = "Outlier", [], 0
             else:
@@ -132,7 +132,7 @@ class ThematicTextProcessor:
 
 
 if __name__ == "__main__":
-    # Use Reuters corpus for demonstration (real-world dataset)
+    # Use Reuters corpus for demonstration
     dataset_text = " ".join(reuters.raw(fileid) for fileid in reuters.fileids()[:50])
 
     # Initialize processor without OpenAI first
