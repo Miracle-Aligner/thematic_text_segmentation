@@ -2,7 +2,7 @@
 # Thematic Text Processing with BERTopic
 
 This project provides a tool for performing thematic text processing using the BERTopic model and OpenAI's GPT-based representations. It allows users to process text data, create topics, and visualize or download the results.
-You can find live demo [HERE]().
+You can find live demo [HERE](https://textsegmentation.streamlit.app/).
 
 ## Table of Contents
 
@@ -94,7 +94,7 @@ with open("data/topics_without_openai.json", "w") as f:
 
 - `README.md`: Documentation for the project.
 - `__pycache__/`: Cached Python files.
-- `data/`: Contains the output files with topics.
+- `data/`: Contains the output files with generated topics.
 - `requirements.txt`: A list of dependencies to install.
 - `streamlit_app.py`: The Streamlit web application for interactive topic modeling.
 - `text_processor.py`: The Python script that processes text, creates topics, and saves the results.
